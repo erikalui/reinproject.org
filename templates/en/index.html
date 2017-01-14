@@ -1,0 +1,79 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <title>Rein</title>
+
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/github-light.css') }}">
+    <meta name="viewport" content="width=device-width">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <div class="wrapper">
+      <header>
+        <h1>Rein</h1>
+        <p>Decentralized freelance market</p>
+
+        
+        <p class="view"><b>Get Started</b><br />
+        <a href="https://github.com/ReinProject/python-rein/archive/master.zip"><button style="margin: 10px;">Download Client (git master)</button></a><br />
+        <a href="https://github.com/ReinProject/causeway/archive/master.zip"><button style="margin:10px;">Download Server (git master)</button></a></p>
+
+        <p class="view"><b>Docs</b><br />
+        <a href="https://github.com/ReinProject/python-rein/blob/master/doc/HOWTO-setup-rein.md">How to Setup Rein</a><br />
+        <a href="{{ url_for('static', filename='files/rein_order_flow.txt') }}">Order flow</a> (ASCII art) (<a href="{{ url_for('static', filename='files/rein_order_flow.png') }}">PNG</a>)<br />
+        <a href="{{ url_for('static', filename='files/rein_object_model.txt') }}">Object model</a> (ASCII art) (<a href="{{ url_for('static', filename='files/rein_object_model.png') }}">PNG</a>)</p>
+        <a href="https://github.com/ReinProject/causeway/blob/master/doc/server_setup.md">Server setup</a><br />
+
+        <p class="view"><b>Videos</b><br />
+        <a href="https://www.youtube.com/watch?v=SxarcArLVds">Part 1: Overview, purpose, features</a><br />
+        <a href="https://www.youtube.com/watch?v=PaF5URG2dLc">Part 2: Install and Setup</a><br />
+        <a href="https://www.youtube.com/watch?v=Qm-BOxf7VFI">Part 3: Order Flow, A Routine Job</a><br />
+        <a href="https://www.youtube.com/watch?v=uDjPP9ToF8Q">Part 4: Dispute and Resolution</a><br />
+        <a href="https://www.youtube.com/playlist?list=PLIe7tQczGXJSCcXGUsLdbscTBZTxN5m9N"><small>Playlist</small></a></p>
+
+        <p class="view"><b>Standalone web-apps</b><br />
+        <a href="{{ url_for('static', filename='bitcoin-signature-tool/index.html') }}">Bitcoin Signature Tool</a><br />
+        <a href="{{ url_for('static', filename='coinbin/index.html') }}">Coinb.in for Rein</a></p>
+
+        <p class="view"><b>Community / Dev</b><br />
+        Github: <a href="https://github.com/ReinProject">ReinProject</a><br />
+        IRC: #rein on freenode<br />
+        Reddit:  <a href="https://reddit.com/r/Rein">r/Rein</a><br />
+        Twitter: <a href="https://twitter.com/ReinProject">@ReinProject</a><br />
+        </p>
+
+
+      </header>
+      <section>
+
+<h2>Freelancing for bitcoin like never before.</h2>
+      
+<h3>
+<a id="why-rein" class="anchor" href="#why-rein" aria-hidden="true"><span class="octicon octicon-link"></span></a>Features</h3>
+    <ul>
+        <li>Multisig escrows keep funds safe for mediators, clients, and freelancers.</li>
+        <li>Master-delegate ECDSA scheme provides security and convenience.
+        <li>A decentralized microhosting network connects freelancers with clients.</li>
+    </ul>
+
+<h3><a id="design-principles" class="anchor" href="#design-principles" aria-hidden="true"><span class="octicon octicon-link"></span></a>Design Principles</h3>
+
+<p><b>Trustless Trade</b> - Payments are stored in 2-of-3 and mandatory multisig addresses. Signatures provide accountability and a foundation for ratings and reputation. </p>
+
+<p><b>Psuedonymity</b> - Rein does not require proof of identity outside the crypto. You can create one or as many identities as you'd like, however, tools will inevitably be built around reputation common sense states that those with established, positive track records will enjoy the most favorable work and output.</p>
+
+<p><b>Innovation @ the edges</b> - Rather than spawn a new p2p network, Rein is modeled after the internet. Microhosting servers operate out of self-interest while competing on price and quality. Server logic is minimized, leaving most of it in the client. This principle will enable Rein to support many different order flows, transaction types, and services.</p>
+
+<p><b>For developers</b> - Decentralization. ECDSA auth. Microhosting. Multisig escrow. How can you NOT work on this? <a href="https://github.com/ReinProject/python-rein/">Check out the code.</a></p>
+
+      </section>
+    </div>
+    <script src="{{ url_for('static', filename='js/scale.fix.js') }}"></script>
+    
+  </body>
+</html>

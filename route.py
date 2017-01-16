@@ -2,8 +2,8 @@ from random import SystemRandom
 from string import digits
 from flask import Flask, request, session, render_template
 
-app = Flask(__name__)
-app.secret_key = ''.join(SystemRandom().choice(digits) for _ in range(32))
+application = Flask(__name__)
+application.secret_key = ''.join(SystemRandom().choice(digits) for _ in range(32))
 
 available_languages = ['en', 'fr', 'ro', 'ru']
 
@@ -27,10 +27,10 @@ def display(headers, template_name):
     lang = get_language(headers)
     return render_template(lang + '/' + template_name)
 
-@app.route('/')
+@application.route('/')
 def index():
     """Index page."""
     return display(request.headers, 'index.html')
 
 if __name__ == '__main__':
-    app.run()
+    application.run()

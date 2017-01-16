@@ -1,0 +1,18 @@
+server {
+    listen 443 ssl;
+    server_name reinproject.org;
+
+    ssl_certificate /opt/reinproject.org/ssl/fullchain.pem;
+    ssl_certificate_key /opt/reinproject.org/ssl/privkey.pem;
+
+    location / {
+        include uwsgi_params;
+        uwsgi_pass unix:/opt/reinproject.org/reinproject.org.sock;
+    }
+}
+
+server {
+    listen 80;
+    server_name reinproject.org;
+    return 301 https://$server_name$request_uri;
+}

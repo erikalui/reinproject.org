@@ -1,0 +1,9 @@
+[Unit]
+Description=Starts uWSGI for reinproject.org  
+
+[Service]
+ExecStart=/usr/local/bin/uwsgi --ini /opt/reinproject.org/app/reinproject.org.ini
+ExecReload=/usr/local/bin/uwsgi --ini /opt/reinproject.org/app/reinproject.org.ini
+KillMode=process
+Restart=on-failure
+RestartSec=60s

@@ -1,6 +1,5 @@
-.DS_Store
-static/.DS_Store
-templates/.DS_Store
+.DS_Store.
 .vscode/
-app/*sock
+app/*.sock
 ssl/
+*.pyc

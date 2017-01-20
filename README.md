@@ -1,6 +1,6 @@
 # Reinproject.org
 
-The code for the reinproject.org site.
+The code of reinproject.org.
 
 ## How to set up the server
 
@@ -49,3 +49,9 @@ Reboot the server, then start the Systemd service:
 ```
 systemctl start reinproject.org.service
 ```
+
+## How to add language support
+
+Language support is designed to use the first two letters of the 'Accept-Language' HTML header. Thus, if a user's OS is in English, reinproject.org will use 'en' as the language setting. For Russian, it's 'ru', for Romanian - 'ro', for French - 'fr'.
+
+To add language support, add a directory with the two language letters as its name to app/templates.

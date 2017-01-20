@@ -44,7 +44,7 @@ sudo ln -s /etc/letsencrypt/live/reinproject.org/fullchain.pem $WORKDIR/ssl/full
 sudo ln -s /etc/letsencrypt/live/reinproject.org/privkey.pem $WORKDIR/ssl/privkey.pem
 ```
 
-Reboot the server, then start the Systemd service:
+Reboot the server, then start the Systemd service. You need to do this manually after every reboot.
 
 ```
 systemctl start reinproject.org.service

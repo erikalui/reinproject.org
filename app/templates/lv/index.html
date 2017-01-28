@@ -16,7 +16,7 @@
     <div class="wrapper">
       <header>
         <h1>Rein</h1>
-        <p>Decentralized freelance market</p>
+        <p>Centralizēts patstāvigo darbu tirgus</p>
 
         
         <p class="view"><b>Get Started</b><br />
@@ -24,23 +24,23 @@
         <a href="https://github.com/ReinProject/causeway/archive/master.zip"><button style="margin:10px;">Download Server (git master)</button></a></p>
 
         <p class="view"><b>Docs</b><br />
-        <a href="https://github.com/ReinProject/python-rein/blob/master/doc/HOWTO-setup-rein.md">How to Setup Rein</a><br />
-        <a href="{{ url_for('static', filename='files/rein_order_flow.txt') }}">Order flow</a> (ASCII art) (<a href="{{ url_for('static', filename='files/rein_order_flow.png') }}">PNG</a>)<br />
-        <a href="{{ url_for('static', filename='files/rein_object_model.txt') }}">Object model</a> (ASCII art) (<a href="{{ url_for('static', filename='files/rein_object_model.png') }}">PNG</a>)</p>
+        <a href="https://github.com/ReinProject/python-rein/blob/master/doc/HOWTO-setup-rein-LV.md">Kā palaist Rein</a><br />
+        <a href="{{ url_for('static', filename='files/rein_order_flow.txt') }}">Rīkojuma plūsma</a> (ASCII art) (<a href="{{ url_for('static', filename='files/rein_order_flow.png') }}">PNG</a>)<br />
+        <a href="{{ url_for('static', filename='files/rein_object_model.txt') }}">Objekta modelis</a> (ASCII art) (<a href="{{ url_for('static', filename='files/rein_object_model.png') }}">PNG</a>)</p>
         <a href="https://github.com/ReinProject/causeway/blob/master/doc/server_setup.md">Server setup</a><br />
 
         <p class="view"><b>Videos</b><br />
-        <a href="https://www.youtube.com/watch?v=SxarcArLVds">Part 1: Overview, purpose, features</a><br />
-        <a href="https://www.youtube.com/watch?v=PaF5URG2dLc">Part 2: Install and Setup</a><br />
-        <a href="https://www.youtube.com/watch?v=Qm-BOxf7VFI">Part 3: Order Flow, A Routine Job</a><br />
-        <a href="https://www.youtube.com/watch?v=uDjPP9ToF8Q">Part 4: Dispute and Resolution</a><br />
+        <a href="https://www.youtube.com/watch?v=SxarcArLVds">Part 1: Pārskats, nolūks, iespējas</a><br />
+        <a href="https://www.youtube.com/watch?v=PaF5URG2dLc">Part 2: Instalēt un palaist</a><br />
+        <a href="https://www.youtube.com/watch?v=Qm-BOxf7VFI">Part 3: Rīkojumu plūsma, Rutīnas darbs</a><br />
+        <a href="https://www.youtube.com/watch?v=uDjPP9ToF8Q">Part 4: Strīdi un rezolūcija</a><br />
         <a href="https://www.youtube.com/playlist?list=PLIe7tQczGXJSCcXGUsLdbscTBZTxN5m9N"><small>Playlist</small></a></p>
 
-        <p class="view"><b>Standalone web-apps</b><br />
-        <a href="{{ url_for('static', filename='bitcoin-signature-tool/index.html') }}">Bitcoin Signature Tool</a><br />
-        <a href="{{ url_for('static', filename='coinbin/index.html') }}">Coinb.in for Rein</a></p>
+        <p class="view"><b>Web aplikācijas</b><br />
+        <a href="{{ url_for('static', filename='bitcoin-signature-tool/index.html') }}">Bitcoin parakstu rīks</a><br />
+        <a href="{{ url_for('static', filename='coinbin/index.html') }}">Coinb.in preikš Rein</a></p>
 
-        <p class="view"><b>Community / Dev</b><br />
+        <p class="view"><b>Kopiena / Izstrādātāji</b><br />
         Github: <a href="https://github.com/ReinProject">ReinProject</a><br />
         IRC: #rein on freenode<br />
         Reddit:  <a href="https://reddit.com/r/Rein">r/Rein</a><br />
@@ -51,12 +51,16 @@
       </header>
       <section>
 
-<h2>Freelancing for bitcoin like never before.</h2>
+<h2>Patstāvīgais darbs ar BITCOIN kā nekad iepriekš.</h2>
       
 <h3>
-<a id="why-rein" class="anchor" href="#why-rein" aria-hidden="true"><span class="octicon octicon-link"></span></a>Features</h3>
+<a id="why-rein" class="anchor" href="#why-rein" aria-hidden="true"><span class="octicon octicon-link"></span></a>Iespējas</h3>
     <ul>
-        <li>Multisig escrows keep funds safe for mediators, clients, and freelancers.</li>
+        <li>Darījumu samaksa ir droša priekš starpniekiem, Klientiem, un patstāvīgajiem darbiniekiem.</li>
+        <li>Īpašā ECDSA shēma nodrošina drošibu un ērtumu.</li>
+        <li>Centralizētais microhosting tīkls savieno patstāvigos darbiniekus ar klientiem.
+Dizaina principi.</li>
+        <li></li>
         <li>Master-delegate ECDSA scheme provides security and convenience.
         <li>A decentralized microhosting network connects freelancers with clients.</li>
     </ul>

@@ -5,7 +5,7 @@ from flask import Flask, request, session, render_template
 application = Flask(__name__)
 application.secret_key = ''.join(SystemRandom().choice(digits) for _ in range(32))
 
-available_languages = ['en', 'lv', 'hi', 'tl', 'ru']
+available_languages = ['en', 'lv', 'hi', 'fi', 'ru']
 
 def get_language(headers):
     """

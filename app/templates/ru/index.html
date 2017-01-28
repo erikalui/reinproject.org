@@ -19,6 +19,21 @@
         <h1>Rein</h1>
         <p>Decentralized freelance market</p>
 
+<p>Select language:
+
+<select id="lang" onchange="go_to()">
+  <option value="/en">English
+  <option value="/fi">Filipino
+  <option value="/hi">Hindi
+  <option value="/lv">Latvian
+  <option selected value="/ru">Russian
+</select>
+</p>
+<script>
+function go_to() {
+    window.location.href = document.getElementById("lang").value;
+}
+</script>
         
         <p class="view"><b>Get Started</b><br />
         <a href="https://github.com/ReinProject/python-rein/archive/v0.2.4-alpha.zip"><button style="margin: 10px;">Download Client (v0.2.4-alpha)</button></a><br />
